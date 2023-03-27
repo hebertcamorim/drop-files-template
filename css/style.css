@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap');
 
 :root {
-    --background: #5b1d99;
+    --background: #0B93DE;
     --border: #b7b09e;
     --primary-text-color: #636363;
     --second-text-color: #848484;
@@ -9,8 +9,8 @@
     --font: 'Raleway', sans-serif;
     --shadow: 0px 0px 36px -7px rgba(0,0,0,0.75);
     --gradient: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(231,237,234,1) 100%);
-    --bnt-color: #a603dc;
-    --bnt-hover-color: #580275;
+    --bnt-color: #186DF5;
+    --bnt-hover-color: #300DFA;
     --bnt-shadow: 0px 13px 33px -11px rgba(0,0,0,0.75);
 }
 
@@ -60,18 +60,19 @@ html {
 
 .drop-box {
     background: var(--gradient);
-    border: 1.5px solid var(--border);
+    border: 2px solid var(--border);
     border-radius: 6px;
     margin-left: 40px;
     margin-right: 40px;
 }
 
 .drop-box:hover {
-    border: 1.5px dashed var(--border);
+    border: 2px dashed var(--border);
+    box-shadow: inset 0 0 10px 10px #dbdbdb;
 }
 
 .drop-logo {
-    width: 40px;
+    width: 100px;
     margin: 30px 0 15px 0;
 }
 
@@ -109,24 +110,40 @@ html {
     height: 60px;
     background: white;
     border-radius: 6px;
-    box-shadow: 0px 12px 24px -14px rgba(0,0,0,0.75);       
+    box-shadow: 0px 0px 21px -5px rgba(66,66,66,1);     
+    display: flex;
 }
 
 .file-icon {
-    background: red;
     width: 36px;
-    height: 40px;
-    margin-top: 10px;
+    margin-left: 6px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    padding-left: 20px;
 }
 
 .file-name {
     font-family: var(--font);
     font-weight: 300;
     font-size: 12px;
-}
+    margin: 10px 0 10px 0;
+} 
 
 .progress-bar {
-    background: #331d4a;
+    background: #c9c9c9;
+    border-radius: 4px;
     width: 200px;
     height: 10px;
-}   
+}
+
+.progress {
+    width: 80%;
+    height: 10px;
+    background: #5749C4;
+    border-radius: 4px;
+    display: flex;
+}
